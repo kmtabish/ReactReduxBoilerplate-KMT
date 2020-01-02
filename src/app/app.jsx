@@ -1,6 +1,6 @@
 import React from 'react';
-import Main from './main';
-import About from './about'
+import Main from './containers/main';
+import About from './containers/about'
 import { Route, Switch } from 'react-router-dom';
 export default class App extends React.Component{
     constructor(props){

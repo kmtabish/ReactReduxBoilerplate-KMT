@@ -1,4 +1,4 @@
-import {mainReducer, groupsReducer, quizReducer} from './mainReducer';
+import {mainReducer} from './mainReducer';
 // export const reducers = combineReducers({
 //   text: basicReducer,
 //   routing: routerReducer
