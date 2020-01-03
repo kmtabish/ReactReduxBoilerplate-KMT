@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -20,6 +21,9 @@ module.exports = merge(common, {
         new CleanWebpackPlugin(['dist/css','dist/js']),
         new MiniCssExtractPlugin({               
             filename: "css/[name].css"
+        }),
+        new webpack.DefinePlugin({
+            'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         })            
     ]
 });
